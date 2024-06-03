@@ -1,0 +1,46 @@
+---
+import Hero from "../components/Hero.astro";
+import Preparation from "../components/Preparation.astro";
+import Instructions from "../components/Instructions.astro";
+import Ingredients from "../components/Ingredients.astro";
+import Nutrition from "../components/Nutrition.astro"
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Recipe Page</title>
+	</head>
+	<body class="bg-colors-white lg:p-10 max-w-screen-xl mx-auto">
+    <main class="max-w-screen-md mx-auto">
+      <Hero />
+      <Preparation />
+      <Ingredients />
+      <Instructions />
+      <Nutrition />
+    </main>
+	</body>
+</html>
+
+<style is:global>
+ @font-face {
+  font-family: "Outfit";
+  src: url('/fsadfasd/fonts/outfit/Outfit-VariableFont_wght.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "YoungSerif";
+  src: url('/fsadfasd/fonts/young-serif/YoungSerif-VariableFont_wght.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+ }
+
+</style>
